@@ -73,3 +73,29 @@ transition: background-image 1s;
 	height: 1000px;
 	background-color: #000;
 }
+
+.wines {
+	display: table;
+	table-layout: fixed;
+	position: absolute;
+}
+
+.wine {
+	display: table-cell;
+}
+
+#see-more p {
+	font-size: 30px;
+	border: 1px solid #fff;
+	position: absolute;
+	font-family: 'Lobster', cursive;
+	color: #fff;
+	padding: 10px 10px 10px 10px;
+	cursor: pointer;
+}
+
+#see-more p:hover {
+	background-color: rgba(255,255,255,1);
+	color: #000;
+	cursor: pointer;
+}

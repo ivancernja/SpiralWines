@@ -8,6 +8,7 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
@@ -50,7 +51,7 @@
 			<h1> Spiral Wines </h1>
 			<br>
 			<div id="begin">
-			<p> Begin! </p>
+				<p> Begin! </p>
 			</div>
 		</div>
 	</div>
@@ -58,7 +59,33 @@
 
 <div id="page1">
 
+		<div class="row row-centered">
+			<div class="col-xs-6 col-lg-6" >
+				<div class="wines">
+					<div class="wine">
+						<img src="img/wine1.png">
+					</div>
+					<div class="wine">
+						<img src="img/wine2.png">
+					</div>
+					<div class="wine">
+						<img src="img/wine3.png">
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-lg-6" > 
+				<div id="wine-info">
+					<h4>Cezve</h4>
+					<p>In order to make Turkish coffee, you need to start with fresh medium-roasted beans that are either pulverized using a mortar and pestle or ground in a cylindrical brass coffee mill. You will also need a jezve (or cezve) or ibrik which makes the experience of producing this coffee all the more fun! <br><br>
+					While this type of coffee is commonly known as "Turkish coffee", it is the commonly used method throughout the Middle East, so in a way, it'd be better known as Middle Eastern coffee. In Greece, they call it Greek coffee; they changed the name in response to the Turkish invasion of Cyprus in 1974, however the coffee is the same, just with a different name.</p>
+				</div>
+				<div id="see-more">
+					<p>See more!</p>
+				</div>
+		</div>
+	</div>
 </div>
+
 <script>
 $("#begin").click(function() {
     $('html, body').animate({
@@ -66,5 +93,6 @@ $("#begin").click(function() {
     }, 2000);
 });
 </script>
+<script src="js/bootstrap"/>
 </body>
 </html>
