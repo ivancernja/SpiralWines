@@ -1,0 +1,75 @@
+body {
+	margin: 0;
+}
+
+.path {
+  stroke-dasharray: 29;
+  stroke-dashoffset: 29;
+  -webkit-animation: dash 3s linear alternate infinite;
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 29;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#page0 {
+height: 1000px;
+background-image: url("../img/head.jpg");
+background-size: cover;
+background-position: bottom;
+background-attachment: fixed;
+-webkit-transition: background-image 1s;
+-moz-transition: background-image 1s;
+-ms-transition: background-image 1s;
+-o-transition: background-image 1s;
+transition: background-image 1s;
+}
+
+#logo svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+#logo h1 {
+  position: absolute;
+  font-family: 'Lobster', cursive;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: #fff;
+  cursor: default;
+
+}
+
+#logo p{
+	font-size: 50px;
+	border: 1px solid #fff;
+	position: absolute;
+  	font-family: 'Lobster', cursive;
+  	top: 85%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+ 	 color: #fff;
+ 	 padding: 10px 10px 10px 10px;
+ 	 cursor: pointer;
+}
+
+#logo p:hover {
+	background-color: rgba(255,255,255,1);
+	color: #000;
+	cursor: pointer;
+}
+
+#page1 {
+	height: 1000px;
+	background-color: #000;
+}
