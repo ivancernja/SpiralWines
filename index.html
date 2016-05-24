@@ -13,11 +13,30 @@
   <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 
-<body>
-<div id="page0">
-	<a id="home" class="smooth"></a>
-		<div class="header-container" data-parallax="scroll">
-			<div id="logo">
+<body id="logo">
+<div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav main-menu">
+          <li><a href="#" data-target="about" class="menu-item">About</a></li>
+          <li><a href="#" data-target="wines" class="menu-item">Wines</a></li>
+          <li><a href="#" data-target="vineyard" class="menu-item">Vineyard</a></li>
+          <li><a href="#" data-target="contact" class="menu-item">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+ </div>
+
+
 				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 			width="300px" height="300px" viewBox="-3 -2.75 6.5 6" enable-background="new 0 0 300 300" xml:space="preserve">
 
@@ -53,44 +72,39 @@
 			<div id="begin">
 				<p> Begin! </p>
 			</div>
-		</div>
-	</div>
+
+
+<div id="about" class="panel" style="display: none;">
+
+asd
 </div>
 
-<div id="page1">
+<div id="wines" class="panel" style="display: none;">
 
-		<div class="row row-centered">
-			<div class="col-xs-6 col-lg-6" >
-				<div class="wines">
-					<div class="wine">
-						<img src="img/wine1.png">
-					</div>
-					<div class="wine">
-						<img src="img/wine2.png">
-					</div>
-					<div class="wine">
-						<img src="img/wine3.png">
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-lg-6" > 
-				<div id="wine-info">
-					<h4>Cezve</h4>
-					<p>In order to make Turkish coffee, you need to start with fresh medium-roasted beans that are either pulverized using a mortar and pestle or ground in a cylindrical brass coffee mill. You will also need a jezve (or cezve) or ibrik which makes the experience of producing this coffee all the more fun! <br><br>
-					While this type of coffee is commonly known as "Turkish coffee", it is the commonly used method throughout the Middle East, so in a way, it'd be better known as Middle Eastern coffee. In Greece, they call it Greek coffee; they changed the name in response to the Turkish invasion of Cyprus in 1974, however the coffee is the same, just with a different name.</p>
-				</div>
-				<div id="see-more">
-					<p>See more!</p>
-				</div>
-		</div>
-	</div>
+fgh
 </div>
+
+<div id="vineyard" class="panel" style="display: none;">
+
+jkl
+</div>
+
+<div id="contact" class="panel" style="display: none;">
+
+
+</div>
+
+
 
 <script>
-$("#begin").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#page1").offset().top
-    }, 2000);
+$(function(){
+
+  $(".main-menu .menu-item").on("click", function(){
+    var $target = $("#" + $(this).attr("data-target"));
+    $target.siblings('.panel').fadeOut(1000);
+    $target.fadeIn(1000);
+  });
+
 });
 </script>
 <script src="js/bootstrap"/>

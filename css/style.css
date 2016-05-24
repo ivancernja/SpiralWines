@@ -1,7 +1,3 @@
-body {
-	margin: 0;
-}
-
 .path {
   stroke-dasharray: 29;
   stroke-dashoffset: 29;
@@ -17,17 +13,13 @@ body {
   }
 }
 
-#page0 {
-height: 1000px;
-background-image: url("../img/head.jpg");
-background-size: cover;
-background-position: bottom;
-background-attachment: fixed;
--webkit-transition: background-image 1s;
--moz-transition: background-image 1s;
--ms-transition: background-image 1s;
--o-transition: background-image 1s;
-transition: background-image 1s;
+body {
+	 background: url(../img/head.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  	margin: 0;
 }
 
 #logo svg {
@@ -69,33 +61,15 @@ transition: background-image 1s;
 	cursor: pointer;
 }
 
-#page1 {
-	height: 1000px;
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-default {
 	background-color: #000;
-}
-
-.wines {
-	display: table;
-	table-layout: fixed;
-	position: absolute;
-}
-
-.wine {
-	display: table-cell;
-}
-
-#see-more p {
-	font-size: 30px;
-	border: 1px solid #fff;
-	position: absolute;
-	font-family: 'Lobster', cursive;
-	color: #fff;
-	padding: 10px 10px 10px 10px;
-	cursor: pointer;
-}
-
-#see-more p:hover {
-	background-color: rgba(255,255,255,1);
-	color: #000;
-	cursor: pointer;
 }
