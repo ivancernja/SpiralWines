@@ -4,4 +4,6 @@
 
 +One page website with parrallax effects and much more.
 
-![screenshot](http://i.imgur.com/3i6lZzf.jpg?1)
+( Images with the Parrallax effect get mixed up when taking a screenshot, it does work on the website )
+
+![screenshot](http://i.imgur.com/IBy7P93.jpg)
