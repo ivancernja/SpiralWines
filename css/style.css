@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	background-color: #000;
 }
 
 .path {
@@ -72,9 +73,28 @@ transition: background-image 1s;
 }
 
 #page1 {
+	background-color: #000;
 	background-image: url(../img/vine.png);
 	background-repeat: repeat-y;
     background-attachment: fixed;
     background-position: center;
-	height: 1000px;
+	height: auto;
+	padding: 100px 100px 100px 100px;
+}
+
+#page1 img {
+	-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+
+#page1 h4 {
+	color: #fff;
+	font-family: 'Lobster';
+	font-size: 30px;
+}
+
+#page1 p {
+	color: #fff;
+	font-family: 'Slabo 27px', serif;
+	font-size: 15px;
 }
