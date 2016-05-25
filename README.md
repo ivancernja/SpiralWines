@@ -8,4 +8,4 @@
 
 ( Images with the Parrallax effect get mixed up when taking a screenshot, it does work on the website )
 
-![screenshot](http://i.imgur.com/IBy7P93.jpg)
+![screenshot](http://i.imgur.com/L2Bb84u.jpg)
