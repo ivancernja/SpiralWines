@@ -1,3 +1,7 @@
+body {
+	margin: 0;
+}
+
 .path {
   stroke-dasharray: 29;
   stroke-dashoffset: 29;
@@ -13,13 +17,19 @@
   }
 }
 
-body {
-	 background: url(../img/head.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  	margin: 0;
+
+
+#page0 {
+height: 1000px;
+background-image: url("../img/head.jpg");
+background-size: cover;
+background-position: bottom;
+background-attachment: fixed;
+-webkit-transition: background-image 1s;
+-moz-transition: background-image 1s;
+-ms-transition: background-image 1s;
+-o-transition: background-image 1s;
+transition: background-image 1s;
 }
 
 #logo svg {
@@ -61,15 +71,10 @@ body {
 	cursor: pointer;
 }
 
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-}
-
-.navbar .navbar-collapse {
-    text-align: center;
-}
-
-.navbar-default {
-	background-color: #000;
+#page1 {
+	background-image: url(../img/vine.png);
+	background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-position: center;
+	height: 1000px;
 }

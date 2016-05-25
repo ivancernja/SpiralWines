@@ -13,30 +13,11 @@
   <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 
-<body id="logo">
-<div class="container">
-    <nav class="navbar navbar-default" role="navigation">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav main-menu">
-          <li><a href="#" data-target="about" class="menu-item">About</a></li>
-          <li><a href="#" data-target="wines" class="menu-item">Wines</a></li>
-          <li><a href="#" data-target="vineyard" class="menu-item">Vineyard</a></li>
-          <li><a href="#" data-target="contact" class="menu-item">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-
- </div>
-
-
+<body>
+<div id="page0">
+	<a id="home" class="smooth"></a>
+		<div class="header-container" data-parallax="scroll">
+			<div id="logo">
 				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 			width="300px" height="300px" viewBox="-3 -2.75 6.5 6" enable-background="new 0 0 300 300" xml:space="preserve">
 
@@ -72,39 +53,23 @@
 			<div id="begin">
 				<p> Begin! </p>
 			</div>
-
-
-<div id="about" class="panel" style="display: none;">
-
-asd
+		</div>
+	</div>
 </div>
 
-<div id="wines" class="panel" style="display: none;">
+<div id="page1">
 
-fgh
-</div>
 
-<div id="vineyard" class="panel" style="display: none;">
 
-jkl
-</div>
-
-<div id="contact" class="panel" style="display: none;">
 
 
 </div>
-
-
 
 <script>
-$(function(){
-
-  $(".main-menu .menu-item").on("click", function(){
-    var $target = $("#" + $(this).attr("data-target"));
-    $target.siblings('.panel').fadeOut(1000);
-    $target.fadeIn(1000);
-  });
-
+$("#begin").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#page1").offset().top
+    }, 2000);
 });
 </script>
 <script src="js/bootstrap"/>
